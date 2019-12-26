@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ion-form-error-messages": [
+        "dist/ion-form-error-messages"
+      ],
+      "ion-form-error-messages/*": [
+        "dist/ion-form-error-messages/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
