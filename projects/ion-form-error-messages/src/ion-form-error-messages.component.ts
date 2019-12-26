@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormGroup, FormControl, AbstractControl } from '@angular/forms';
 
 @Component({
     selector: 'ion-form-error-messages',
@@ -9,10 +9,10 @@ import { FormGroup } from '@angular/forms';
                 <ng-container *ngFor="let controlKey of objectToKeys(formGroup?.controls)">
                     <ng-container *ngFor="let errorKey of objectToKeys(getErrors(controlKey))">
                         <ng-container *ngIf="messages[controlKey] || {} as errorMessages">
-                            <ion-row *ngIf="errorMessages[errorKey] || defaultMessage">
+                            <ion-row *ngIf="errorMessages[errorKey]">
                                 <ion-col class="ion-no-padding ion-text-wrap">
                                     <ion-text [color]="color">
-                                        {{ errorMessages[errorKey] || defaultMessage }}
+                                        {{ errorMessages[errorKey] }}
                                     </ion-text>
                                 </ion-col>
                             </ion-row>
@@ -25,7 +25,6 @@ import { FormGroup } from '@angular/forms';
     styles: []
 })
 export class IonFormErrorMessagesComponent implements OnInit {
-    @Input() defaultMessage: string;
     @Input() formGroup: FormGroup;
     @Input() messages: { [control: string]: { [error: string]: string } };
     @Input() color = 'danger';
