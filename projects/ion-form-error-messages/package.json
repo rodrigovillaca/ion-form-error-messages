@@ -7,6 +7,16 @@
         "url": "https://github.com/rodrigovillaca/ion-form-error-messages/issues",
         "email": "rodrigo.villaca.mcse@gmail.com"
     },
+    "keywords": [
+        "ionic",
+        "ionic4",
+        "angular",
+        "angular8",
+        "form",
+        "error",
+        "validation",
+        "input"
+    ],
     "peerDependencies": {
         "@angular/common": "^8.2.14",
         "@angular/core": "^8.2.14",
