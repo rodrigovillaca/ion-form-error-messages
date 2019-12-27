@@ -1,6 +1,6 @@
 {
     "name": "ion-form-error-messages",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "author": "Rodrigo Villaca <rodrigo.villaca.mcse@gmail.com>",
     "license": "MIT",
     "bugs": {
@@ -17,6 +17,7 @@
         "validation",
         "input"
     ],
+    "homepage": "https://github.com/rodrigovillaca/ion-form-error-messages",
     "peerDependencies": {
         "@angular/common": "^8.2.14",
         "@angular/core": "^8.2.14",
