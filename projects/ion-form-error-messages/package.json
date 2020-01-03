@@ -1,11 +1,14 @@
 {
     "name": "ion-form-error-messages",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "Rodrigo Villaca <rodrigo.villaca.mcse@gmail.com>",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/rodrigovillaca/ion-form-error-messages/issues",
         "email": "rodrigo.villaca.mcse@gmail.com"
+    },
+    "scripts": {
+        "build": "ng build && cp -rf README.md dist/ion-form-error-messages/"
     },
     "keywords": [
         "ionic",
